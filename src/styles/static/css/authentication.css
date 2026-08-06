@@ -1,0 +1,181 @@
+/*auth phone*/
+.body-wrapper {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.logo-header {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.logo {
+  max-width: 220px;
+}
+
+.city-container {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.map-icon {
+  margin: 2px 3px;
+}
+
+.city {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-grey);
+}
+
+.auth-container {
+  margin-top: 45px;
+  max-width: 452px;
+  width: 100%;
+  background-color: var(--white);
+  padding: 32px 28px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-header-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.auth-header {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.auth-text {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.info-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 14px 18px 14px 10px;
+  background: var(--Gradient-blue-10);
+  border-radius: 16px;
+}
+
+.info-block-icon {
+  min-width: 24px;
+}
+
+.info-block-text {
+  font-size: 14px;
+  color: var(--accent-blue);
+}
+
+.legal-text {
+  margin-top: 16px;
+  max-width: 452px;
+}
+
+.legal-text {
+  font-size: 14px;
+  text-align: center;
+}
+
+.legal-link {
+  color: var(--accent-blue);
+  font-weight: 600;
+}
+
+@media (max-width: 450px) {
+  .auth-container {
+    padding: 20px 16px;
+  }
+
+  .auth-header {
+    font-size: 20px;
+  }
+
+  .info-block {
+    padding: 10px 10px 10px 6px;
+  }
+
+  .info-block-text {
+    font-size: 12px;
+  }
+
+  .legal-text {
+    font-size: 12px;
+  }
+}
+
+/*auth sms*/
+
+.sms-code {
+  display: flex;
+  gap: 22px;
+  justify-content: center;
+}
+
+.sms-code-input {
+  width: 52px;
+  height: 60px;
+
+  border: solid 1px var(--medium-grey-50);
+  border-radius: 14px;
+
+  background-color: var(--white);
+
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+
+  outline: none;
+}
+
+.button-sms {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--accent-blue);
+  width: fit-content;
+  margin: auto;
+}
+
+.user-phone {
+  font-weight: 600;
+}
+
+.button-change-phone {
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  font-size: 14px;
+  color: var(--text-pale-grey);
+}
+
+.resend-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+/* auth data */
+
+.input-data-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}

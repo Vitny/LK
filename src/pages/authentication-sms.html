@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../styles/static/css/reset.css" />
+    <link rel="stylesheet" href="../styles/static/css/styles.css" />
+    <link rel="stylesheet" href="../styles/static/css/authentication.css" />
+    <title>Auth sms</title>
+  </head>
+  <body>
+    <div class="body-wrapper">
+      <div class="logo-header">
+        <img
+          class="logo"
+          src="../styles/assets/svg/desktop_logo.svg"
+          alt="logo"
+        />
+        <div class="city-container">
+          <svg
+            class="map-icon"
+            width="14"
+            height="17"
+            viewBox="0 0 14 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.66667 0C3.16667 0 0 2.68333 0 6.83333C0 9.48333 2.04167 12.6 6.11667 16.1917C6.43333 16.4667 6.90833 16.4667 7.225 16.1917C11.2917 12.6 13.3333 9.48333 13.3333 6.83333C13.3333 2.68333 10.1667 0 6.66667 0ZM6.66667 8.33333C5.75 8.33333 5 7.58333 5 6.66667C5 5.75 5.75 5 6.66667 5C7.58333 5 8.33333 5.75 8.33333 6.66667C8.33333 7.58333 7.58333 8.33333 6.66667 8.33333Z"
+              fill="url(#paint0_linear_680_295)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_680_295"
+                x1="2.74143"
+                y1="16.3979"
+                x2="15.0827"
+                y2="15.7088"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#FF9623" />
+                <stop offset="1" stop-color="#FF5912" stop-opacity="0.91" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="city">Санкт-Петербург</span>
+        </div>
+      </div>
+      <div class="auth-container">
+        <button class="button-change-phone">
+          <svg
+            width="4"
+            height="6"
+            viewBox="0 0 4 6"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 6V4.47561L0.568 2.57317V3.42683L4 1.52439V0C4 0 1 0.967506 -1.19209e-07 3.00003C0.782821 4.86704 4 6 4 6Z"
+              fill="var(--text-grey)"
+            />
+          </svg>
+          Изменить номер
+        </button>
+        <div class="auth-header-container">
+          <p class="auth-header">Введите код из СМС</p>
+          <p class="auth-text">
+            Мы отправили 4-значный код на номер <br />
+            <span class="user-phone"> +7 (999) 123-45-6</span>
+          </p>
+        </div>
+        <div class="sms-code">
+          <input
+            class="sms-code-input"
+            type="text"
+            inputmode="numeric"
+            maxlength="1"
+            placeholder="_"
+          />
+          <input
+            class="sms-code-input"
+            type="text"
+            inputmode="numeric"
+            maxlength="1"
+            placeholder="_"
+          />
+          <input
+            class="sms-code-input"
+            type="text"
+            inputmode="numeric"
+            maxlength="1"
+            placeholder="_"
+          />
+          <input
+            class="sms-code-input"
+            type="text"
+            inputmode="numeric"
+            maxlength="1"
+            placeholder="_"
+          />
+        </div>
+
+        <button class="main-button">
+          Продолжить
+          <svg
+            width="5"
+            height="6"
+            viewBox="0 0 5 6"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 6V4.47561L4.29 2.57317V3.42683L0 1.52439V0C0 0 3.75 0.967506 5 3.00003C4.02147 4.86704 0 6 0 6Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+        <div class="resend-container">
+          <p class="resend-text">
+            Отправленный код действителен
+            <span class="sms-active-period">N</span> минут
+          </p>
+          <button class="button-sms">Отправить код повторно</button>
+        </div>
+      </div>
+      <p class="legal-text">
+        Нажимая «Продолжить», Вы соглашаетесь с
+        <a class="legal-link" href=""
+          >политикой конфиденциальности клиники «Эксимер»</a
+        >
+        и даете
+        <a class="legal-link" href="">
+          согласие на обработку персональных данных</a
+        >
+      </p>
+    </div>
+  </body>
+</html>
