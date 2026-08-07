@@ -1,16 +1,16 @@
 /* шрифт */
 @font-face {
-  font-family: "Montserrat";
-  src: url("../../font/Montserrat/Montserrat-VariableFont_wght.ttf")
-    format("truetype");
+  font-family: 'Montserrat';
+  src: url('../../font/Montserrat/Montserrat-VariableFont_wght.ttf')
+    format('truetype');
   font-weight: 100 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("../../font/Montserrat/Montserrat-Italic-VariableFont_wght.ttf")
-    format("truetype");
+  font-family: 'Montserrat';
+  src: url('../../font/Montserrat/Montserrat-Italic-VariableFont_wght.ttf')
+    format('truetype');
   font-weight: 100 900;
   font-style: italic;
 }
@@ -46,6 +46,21 @@
   --grey: #999;
 
   --white: #fff;
+
+  --cancel: #ee0020;
+  --cancel-pale: #ffcccd;
+
+  --state-wait-confirm-bg: #fffbeb;
+  --state-wait-confirm-brdr: #feeca5;
+  --state-wait-confirm-txt: #bd5307;
+
+  --state-confirm-bg: #ecfdf5;
+  --state-confirm-brdr: #a6f4d0;
+  --state-confirm-txt: #078264;
+
+  --state-done-bg: #f5f5f4;
+  --state-done-brdr: #e2e8f0;
+  --state-done-txt: #575d62;
 }
 
 /* скроллбар */
@@ -82,7 +97,7 @@ body {
 
 body {
   background-color: var(--skyblue);
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: var(--text-black);
 }
 
@@ -133,6 +148,36 @@ label {
 }
 
 /* боковая панель */
+
+.city-container {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.map-icon {
+  margin: 2px 3px;
+}
+
+.city {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-grey);
+}
+
+.menu-button.active {
+  background: var(--Gradient-blue);
+}
+
+.menu-button.active {
+  color: var(--white);
+  font-weight: 600;
+}
+
+.menu-button.active svg {
+  fill: var(--white);
+}
+
 .logo-header {
   padding: 14px 34px 0;
   display: flex;
@@ -241,6 +286,9 @@ label {
   font-weight: 600;
   letter-spacing: -4%;
 }
+.patient-button:hover {
+  background: var(--Gradient-blue-10);
+}
 
 .patient-button.dropdown {
   display: none;
@@ -264,7 +312,7 @@ label {
 /* контент выбранного режима навигации */
 .main-content-container {
   padding: 40px 16px 16px 40px;
-  max-width: 980px;
+  max-width: 1040px;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -301,6 +349,8 @@ label {
   background-color: var(--text-grey);
   border-radius: 100px;
 }
+
+
 
 @media (max-width: 1000px) {
   .burger-menu-container {

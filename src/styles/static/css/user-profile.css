@@ -1,31 +1,4 @@
-.city-container {
-  display: flex;
-  gap: 6px;
-  align-items: center;
-}
 
-.map-icon {
-  margin: 2px 3px;
-}
-
-.city {
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--text-grey);
-}
-
-.menu-button.active {
-  background: var(--Gradient-blue);
-}
-
-.menu-button.active {
-  color: var(--white);
-  font-weight: 600;
-}
-
-.menu-button.active svg {
-  fill: var(--white);
-}
 
 .main-content-profile {
   display: flex;

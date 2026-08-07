@@ -1,0 +1,190 @@
+.main-content-my-appointments {
+}
+
+.toggle-buttons {
+  display: flex;
+  padding: 4px;
+  background: var(--white);
+  border-radius: 16px;
+  width: fit-content;
+  letter-spacing: -5%;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 148px;
+  height: 40px;
+  color: var(--text-pale-l);
+  border-radius: 16px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.toggle.active {
+  background: var(--Gradient-blue);
+  color: var(--white);
+}
+
+.my-appointments-container {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 4px;
+}
+
+.sort-button {
+  display: flex;
+  align-items: center;
+  letter-spacing: -5%;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-pale-l);
+}
+
+.my-appointments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.appointment-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 20px 18px 20px;
+  background-color: var(--white);
+  border: 1px solid var(--light-grey);
+  border-radius: 20px;
+  width: 100%;
+}
+
+.appointment-info {
+  max-width: 728px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.appointment-state {
+  padding: 6px 12px;
+  width: fit-content;
+  border-radius: 14px;
+  border: 1px solid var(--state-wait-confirm-brdr);
+  color: var(--state-wait-confirm-txt);
+  background-color: var(--state-wait-confirm-bg);
+
+  font-size: 12px;
+  font-weight: 500;
+}
+.appointment-state.wait-confirm {
+  border: 1px solid var(--state-wait-confirm-brdr);
+  color: var(--state-wait-confirm-txt);
+  background-color: var(--state-wait-confirm-bg);
+}
+.appointment-state.confirm {
+  border: 1px solid var(--state-confirm-brdr);
+  color: var(--state-confirm-txt);
+  background-color: var(--state-confirm-bg);
+}
+.appointment-state.done {
+  border: 1px solid var(--state-done-brdr);
+  color: var(--state-done-txt);
+  background-color: var(--state-done-bg);
+}
+
+.appointment-service-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.appointment-subinfo {
+  display: flex;
+  gap: 40px;
+  color: var(--text-pale);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.appointment-data {
+  display: flex;
+  gap: 12px;
+}
+
+.appointment-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-cancel {
+  display: flex;
+  gap: 4px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--cancel-pale);
+  color: var(--cancel);
+
+  font-size: 12px;
+}
+
+.button-look-docs {
+  display: flex;
+  gap: 4px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: var(--Gradient-blue);
+  color: var(--accent-blue);
+
+  font-size: 12px;
+}
+
+.button-look-docs:hover {
+  background: var(--Gradient-blue-10);
+}
+
+.button-cancel:hover {
+  background-color: var(--cancel-pale);
+}
+
+.info-icon {
+  width: 102px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 650px) {
+  .toggle-buttons {
+    width: 100%;
+  }
+
+  .toggle {
+    width: 100%;
+  }
+
+  .appointment-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .appointment-subinfo {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .appointment-data {
+    gap: 28px;
+  }
+
+  .my-appointments-list {
+    gap: 6px;
+  }
+
+  .info-icon {
+    width: fit-content;
+  }
+}
