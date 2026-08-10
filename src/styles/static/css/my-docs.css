@@ -1,0 +1,78 @@
+.my-docs-container {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 4px;
+}
+
+.sort-button {
+  display: flex;
+  align-items: center;
+  letter-spacing: -5%;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-pale-l);
+}
+
+.doc-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 20px;
+  background-color: var(--white);
+  border: 1px solid var(--light-grey);
+  border-radius: 20px;
+  width: 100%;
+}
+
+.doc-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.doc-date,
+.doc-time {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.my-docs-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.doc-data {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  color: var(--text-pale-grey);
+  font-weight: 500;
+}
+
+.doc-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.button-dwnld {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: var(--Gradient-blue);
+  color: var(--accent-blue);
+
+  font-size: 14px;
+}
+
+.button-dwnld:hover {
+  background: var(--Gradient-blue-10);
+}

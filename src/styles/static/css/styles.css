@@ -88,6 +88,10 @@
   transition: all 0.2s ease;
 }
 
+main {
+  width: 100%;
+}
+
 html,
 body {
   width: 100%;

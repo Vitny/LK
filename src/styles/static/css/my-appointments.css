@@ -101,9 +101,9 @@
 .appointment-subinfo {
   display: flex;
   gap: 40px;
-  color: var(--text-pale);
-  font-size: 12px;
-  font-weight: 400;
+  color: var(--text-pale-grey);
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .appointment-data {
@@ -125,7 +125,7 @@
   border: 1px solid var(--cancel-pale);
   color: var(--cancel);
 
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .button-look-docs {
@@ -137,7 +137,7 @@
   border-color: var(--Gradient-blue);
   color: var(--accent-blue);
 
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .button-look-docs:hover {
