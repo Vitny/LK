@@ -8,3 +8,4 @@
 
 - [Профиль](https://vitny.github.io/LK/src/pages/user-profile.html)
 - [Мои записи](https://vitny.github.io/LK/src/pages/my-appointments.html)
+- [Мои документы](https://vitny.github.io/LK/src/pages/my-docs.html)
