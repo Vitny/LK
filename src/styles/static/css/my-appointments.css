@@ -1,6 +1,3 @@
-.main-content-my-appointments {
-}
-
 .toggle-buttons {
   display: flex;
   padding: 4px;
@@ -158,6 +155,13 @@
   justify-content: center;
 }
 
+.appointment-date,
+.appointment-time,
+.appointment-doctor {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
 @media (max-width: 650px) {
   .toggle-buttons {
     width: 100%;
