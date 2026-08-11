@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../styles/static/css/reset.css" />
     <link rel="stylesheet" href="../styles/static/css/styles.css" />
     <link rel="stylesheet" href="../styles/static/css/appointment.css" />
-    <title>appointment type</title>
+    <title>appointment path</title>
   </head>
   <body class="">
     <div class="body-wrapper">
@@ -237,10 +237,12 @@
                   <div class="appointment-step-number active first">1</div>
                   <span class="appointment-step-text active">Тип приёма</span>
                 </div>
-                <div class="appointment-steps-line"></div>
+                <div class="appointment-steps-line active"></div>
                 <div class="appointment-step">
-                  <div class="appointment-step-number second">2</div>
-                  <span class="appointment-step-text">Врач и клиника</span>
+                  <div class="appointment-step-number active second">2</div>
+                  <span class="appointment-step-text active"
+                    >Врач и клиника</span
+                  >
                 </div>
                 <div class="appointment-steps-line"></div>
                 <div class="appointment-step">
@@ -257,44 +259,42 @@
             <div class="main-content">
               <div class="main-content-appointment">
                 <div class="appointment-container">
-                  <div class="buttons-choose type">
-                    <div class="button-choose type diagnostic">
+                  <div class="buttons-choose path">
+                    <div class="button-choose path clinic">
                       <img
                         class="choose-icon"
-                        src="../styles/assets/svg/appointment/diagnostic_pale.svg"
+                        src="../styles/assets/svg/appointment/clinic_pale.svg"
                       />
                       <img
                         class="choose-icon hide"
-                        src="../styles/assets/svg/appointment/diagnostic_active.svg"
+                        src="../styles/assets/svg/appointment/clinic_active.svg"
                       />
                       <div class="appointment-choose-info">
                         <span class="appointment-choose-header"
-                          >Диагностика</span
+                          >Выбор клиники</span
                         >
                         <p class="appointment-choose-text">
-                          Это комплексное обследование для выявления заболевания
-                          и определения дальнейшей тактики лечения
-                          <br />
-                          Подходит, если вы давно не проверяли зрение
+                          Сначала выберите удобный адрес, затем врача в этой
+                          клинике
                         </p>
                       </div>
                     </div>
-                    <div class="button-choose type checkup">
+                    <div class="button-choose path doc">
                       <img
                         class="choose-icon"
-                        src="../styles/assets/svg/appointment/checkup_pale.svg"
+                        src="../styles/assets/svg/appointment/doc_pale.svg"
                       />
                       <img
                         class="choose-icon hide"
-                        src="../styles/assets/svg/appointment/checkup_active.svg"
+                        src="../styles/assets/svg/appointment/doc_active.svg"
                       />
                       <div class="appointment-choose-info">
-                        <span class="appointment-choose-header">Осмотр</span>
+                        <span class="appointment-choose-header"
+                          >Выбор врача</span
+                        >
                         <p class="appointment-choose-text">
-                          Это контрольное обследование в рамках наблюдения после
-                          диагностики или проведённого лечения
-                          <br />
-                          Подходит для контроля после лечения
+                          Сначала выберите нужного врача, затем клинику, где он
+                          принимает
                         </p>
                       </div>
                       <img
@@ -304,21 +304,39 @@
                       />
                     </div>
                   </div>
-                  <button class="main-button">
-                    Продолжить
-                    <svg
-                      width="5"
-                      height="6"
-                      viewBox="0 0 5 6"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 6V4.47561L4.29 2.57317V3.42683L0 1.52439V0C0 0 3.75 0.967506 5 3.00003C4.02147 4.86704 0 6 0 6Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </button>
+                  <div class="appointment-button-container">
+                    <button class="sub-button">
+                      <svg
+                        width="5"
+                        height="6"
+                        viewBox="0 0 5 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5 6V4.47561L0.71 2.57317V3.42683L5 1.52439V0C5 0 1.25 0.967506 0 3.00003C0.978526 4.86704 5 6 5 6Z"
+                          fill="var(--text-grey)"
+                        />
+                      </svg>
+
+                      Назад
+                    </button>
+                    <button class="main-button">
+                      Продолжить
+                      <svg
+                        width="5"
+                        height="6"
+                        viewBox="0 0 5 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 6V4.47561L4.29 2.57317V3.42683L0 1.52439V0C0 0 3.75 0.967506 5 3.00003C4.02147 4.86704 0 6 0 6Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
                 <div class="call-us">
                   <svg
