@@ -15,3 +15,4 @@
 # Запись на приём
 
 - [Запись — Тип приёма ](https://vitny.github.io/LK/src/pages/appointment-type.html)
+- [Запись — Путь записи ](https://vitny.github.io/LK/src/pages/appointment-path.html)
