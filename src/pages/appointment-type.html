@@ -6,7 +6,8 @@
 
     <link rel="stylesheet" href="../styles/static/css/reset.css" />
     <link rel="stylesheet" href="../styles/static/css/styles.css" />
-    <title>chat</title>
+    <link rel="stylesheet" href="../styles/static/css/appointment.css" />
+    <title>appointment type</title>
   </head>
   <body class="">
     <div class="body-wrapper">
@@ -115,7 +116,7 @@
 
               <span>Шаблоны заявлений</span>
             </button>
-            <button class="menu-button appointment">
+            <button class="menu-button appointment active">
               <svg
                 width="24"
                 height="24"
@@ -139,7 +140,7 @@
 
               <span>Записаться в клинику </span>
             </button>
-            <button class="menu-button chat active">
+            <button class="menu-button chat">
               <svg
                 width="24"
                 height="24"
@@ -229,11 +230,142 @@
           </div>
           <div class="main-content-container">
             <div class="main-content-header">
-              <h1>Обратная связь</h1>
+              <h1>Запись на приём</h1>
+              <span class="appointment-header-step">Выберите тип приёма</span>
+              <div class="appointment-steps">
+                <div class="appointment-step">
+                  <div class="appointment-step-number active first">1</div>
+                  <span class="appointment-step-text active">Тип приёма</span>
+                </div>
+                <div class="appointment-steps-line"></div>
+                <div class="appointment-step">
+                  <div class="appointment-step-number second">2</div>
+                  <span class="appointment-step-text">Врач и клиника</span>
+                </div>
+                <div class="appointment-steps-line"></div>
+                <div class="appointment-step">
+                  <div class="appointment-step-number third">3</div>
+                  <span class="appointment-step-text">Дата и время</span>
+                </div>
+                <div class="appointment-steps-line"></div>
+                <div class="appointment-step">
+                  <div class="appointment-step-number fourth">4</div>
+                  <span class="appointment-step-text">Подтверждение</span>
+                </div>
+              </div>
             </div>
             <div class="main-content">
-              <div class="main-content-chat">
-                <img src="../styles/assets/png/dummy.png" />
+              <div class="main-content-appointment">
+                <div class="appointment-container">
+                  <div class="buttons-choose type">
+                    <div class="button-choose type diagnostic">
+                      <img
+                        class="choose-icon"
+                        src="../styles/assets/svg/appointment/diagnostic_pale.svg"
+                      />
+                      <img
+                        class="choose-icon hide"
+                        src="../styles/assets/svg/appointment/diagnostic_active.svg"
+                      />
+                      <div class="appointment-choose-info">
+                        <span class="appointment-choose-header"
+                          >Диагностика</span
+                        >
+                        <p class="appointment-choose-text">
+                          Это комплексное обследование для выявления заболевания
+                          и определения дальнейшей тактики лечения
+                          <br />
+                          Подходит, если вы давно не проверяли зрение
+                        </p>
+                      </div>
+                    </div>
+                    <div class="button-choose type diagnostic">
+                      <img
+                        class="choose-icon"
+                        src="../styles/assets/svg/appointment/checkup_pale.svg"
+                      />
+                      <img
+                        class="choose-icon hide"
+                        src="../styles/assets/svg/appointment/checkup_active.svg"
+                      />
+                      <div class="appointment-choose-info">
+                        <span class="appointment-choose-header">Осмотр</span>
+                        <p class="appointment-choose-text">
+                          Это контрольное обследование в рамках наблюдения после
+                          диагностики или проведённого лечения
+                          <br />
+                          Подходит для контроля после лечения
+                        </p>
+                      </div>
+                      <img
+                        class="check-icon hide"
+                        src="../styles/assets/svg/appointment/appointment_check_icon.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <button class="main-button">
+                    Продолжить
+                    <svg
+                      width="5"
+                      height="6"
+                      viewBox="0 0 5 6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 6V4.47561L4.29 2.57317V3.42683L0 1.52439V0C0 0 3.75 0.967506 5 3.00003C4.02147 4.86704 0 6 0 6Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="call-us">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="40" height="40" rx="20" fill="#383F45" />
+                    <rect
+                      width="40"
+                      height="40"
+                      rx="20"
+                      fill="url(#paint0_linear_746_1508)"
+                    />
+                    <path
+                      d="M23.6282 22.8909L24.0842 22.4379L23.0252 21.3739L22.5712 21.8269L23.6282 22.8909ZM25.6132 22.2479L27.5242 23.2869L28.2392 21.9689L26.3292 20.9309L25.6132 22.2479ZM27.8912 25.3509L26.4712 26.7639L27.5282 27.8269L28.9482 26.4149L27.8912 25.3509ZM25.6052 27.2179C24.1552 27.3539 20.4052 27.2329 16.3432 23.1949L15.2852 24.2579C19.7172 28.6649 23.9362 28.8809 25.7452 28.7119L25.6052 27.2179ZM16.3432 23.1949C12.4722 19.3449 11.8302 16.1079 11.7502 14.7029L10.2522 14.7879C10.3522 16.5559 11.1472 20.1439 15.2852 24.2579L16.3432 23.1949ZM17.7182 17.0149L18.0052 16.7289L16.9492 15.6659L16.6622 15.9509L17.7182 17.0149ZM18.2332 13.0939L16.9732 11.4099L15.7722 12.3099L17.0322 13.9929L18.2332 13.0939ZM12.7322 11.0429L11.1622 12.6029L12.2202 13.6669L13.7892 12.1069L12.7322 11.0429ZM17.1902 16.4829C16.6602 15.9509 16.6602 15.9509 16.6602 15.9529H16.6582L16.6552 15.9569C16.6077 16.0048 16.5651 16.0574 16.5282 16.1139C16.4742 16.1939 16.4152 16.2989 16.3652 16.4319C16.2435 16.7753 16.2132 17.1443 16.2772 17.5029C16.4112 18.3679 17.0072 19.5109 18.5332 21.0289L19.5912 19.9649C18.1622 18.5449 17.8222 17.6809 17.7592 17.2729C17.7292 17.0789 17.7602 16.9829 17.7692 16.9609C17.7752 16.9476 17.7752 16.9456 17.7692 16.9549C17.7603 16.9687 17.7503 16.9818 17.7392 16.9939L17.7292 17.0039L17.7192 17.0129L17.1902 16.4829ZM18.5332 21.0289C20.0602 22.5469 21.2092 23.1389 22.0752 23.2709C22.5182 23.3389 22.8752 23.2849 23.1462 23.1839C23.298 23.1284 23.4398 23.0487 23.5662 22.9479L23.6162 22.9029L23.6232 22.8969L23.6262 22.8939L23.6272 22.8919C23.6272 22.8919 23.6282 22.8909 23.0992 22.3589C22.5692 21.8269 22.5722 21.8259 22.5722 21.8259L22.5742 21.8239L22.5762 21.8219L22.5822 21.8169L22.5922 21.8069L22.6302 21.7769C22.6396 21.7709 22.6372 21.7716 22.6232 21.7789C22.5982 21.7879 22.5002 21.8189 22.3032 21.7889C21.8892 21.7249 21.0192 21.3849 19.5912 19.9649L18.5332 21.0289ZM16.9732 11.4089C15.9532 10.0489 13.9492 9.83293 12.7322 11.0429L13.7892 12.1069C14.3212 11.5779 15.2652 11.6329 15.7722 12.3099L16.9732 11.4089ZM11.7512 14.7039C11.7312 14.3579 11.8902 13.9959 12.2202 13.6679L11.1612 12.6039C10.6242 13.1379 10.2012 13.8939 10.2522 14.7879L11.7512 14.7039ZM26.4712 26.7639C26.1972 27.0379 25.9012 27.1919 25.6062 27.2189L25.7452 28.7119C26.4802 28.6429 27.0812 28.2729 27.5292 27.8279L26.4712 26.7639ZM18.0052 16.7289C18.9902 15.7499 19.0632 14.2029 18.2342 13.0949L17.0332 13.9939C17.4362 14.5329 17.3762 15.2399 16.9482 15.6669L18.0052 16.7289ZM27.5252 23.2879C28.3422 23.7319 28.4692 24.7779 27.8922 25.3519L28.9502 26.4149C30.2902 25.0819 29.8772 22.8589 28.2402 21.9699L27.5252 23.2879ZM24.0842 22.4389C24.4682 22.0569 25.0862 21.9629 25.6142 22.2489L26.3302 20.9319C25.2462 20.3419 23.9022 20.5049 23.0262 21.3749L24.0842 22.4389Z"
+                      fill="white"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_746_1508"
+                        x1="-4.02778"
+                        y1="45.8483"
+                        x2="36.4458"
+                        y2="46.5589"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop
+                          offset="0.00679618"
+                          stop-color="#12AAFF"
+                          stop-opacity="0.83"
+                        />
+                        <stop offset="1" stop-color="#1577CA" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <div class="call-us-info">
+                    <p class="call-us-header">Сложно выбрать самостоятельно?</p>
+                    <p class="call-us-text">
+                      Позвоните по номеру
+                      <span class="call-us-phone">8 812 561 13 59</span>
+                      —&nbsp;мы подберём подходящий приём и время
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

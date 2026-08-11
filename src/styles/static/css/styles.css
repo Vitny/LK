@@ -264,12 +264,16 @@ label {
 
 /* верхняя панель с пациентами */
 .main-container {
-  flex: none;
   margin-left: 288px;
   margin-top: 72px;
+
+  height: calc(100vh - 72px);
+
   overflow-y: auto;
   overflow-x: hidden;
-  height: calc(100vh - 72px);
+
+  display: flex;
+  flex-direction: column;
 }
 
 .patient-panel {
@@ -334,6 +338,10 @@ label {
 
 /* контент выбранного режима навигации */
 .main-content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   padding: 32px 16px 16px 32px;
   max-width: 1040px;
   overflow-y: auto;
@@ -351,6 +359,9 @@ label {
 
 .main-content {
   margin-top: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .burger-menu-container {
