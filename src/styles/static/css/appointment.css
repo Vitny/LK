@@ -102,6 +102,9 @@
 }
 
 .button-choose {
+  font-size: 17px;
+  font-weight: 600;
+
   position: relative;
   padding: 20px 26px;
   background-color: var(--white);
@@ -148,6 +151,10 @@
   top: 20px;
 }
 
+.check-icon.any {
+  top: 15px;
+}
+
 .call-us {
   display: flex;
   gap: 10px;
@@ -184,6 +191,55 @@
   color: var(--accent-orange);
 }
 
+.appointment-button-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons-choose.clinics {
+  flex-direction: column;
+}
+
+.button-choose-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.clinic-container {
+  flex: 0 0 calc(50% - 8px);
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.clinic-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.clinic-info-item {
+  display: flex;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-pale-grey);
+}
+
+.button-choose.any {
+  max-height: 62px;
+}
+
+.clinic-info-icon {
+  width: 16px;
+  height: 16px;
+}
+
 @media (max-width: 650px) {
   .appointment-header-step {
     font-size: 14px;
@@ -216,14 +272,15 @@
 
   .buttons-choose {
     gap: 6px;
+    font-size: 16px;
   }
-}
 
-/* Путь записи*/
+  .button-choose-list {
+    gap: 6px;
+    flex-direction: column;
+  }
 
-.appointment-button-container {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
+  .clinic-container {
+    flex: 1 1 0;
+  }
 }

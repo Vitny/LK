@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../styles/static/css/reset.css" />
     <link rel="stylesheet" href="../styles/static/css/styles.css" />
     <link rel="stylesheet" href="../styles/static/css/appointment.css" />
-    <title>appointment path</title>
+    <title>appointment clinic</title>
   </head>
   <body class="">
     <div class="body-wrapper">
@@ -231,7 +231,7 @@
           <div class="main-content-container">
             <div class="main-content-header">
               <h1>Запись на приём</h1>
-              <span class="appointment-header-step">Выберите путь записи</span>
+              <span class="appointment-header-step">Выберите клинику</span>
               <div class="appointment-steps">
                 <div class="appointment-step">
                   <div class="appointment-step-number active first">1</div>
@@ -259,49 +259,99 @@
             <div class="main-content">
               <div class="main-content-appointment">
                 <div class="appointment-container">
-                  <div class="buttons-choose path">
-                    <div class="button-choose path clinic">
-                      <img
-                        class="choose-icon"
-                        src="../styles/assets/svg/appointment/clinic_pale.svg"
-                      />
-                      <img
-                        class="choose-icon hide"
-                        src="../styles/assets/svg/appointment/clinic_active.svg"
-                      />
-                      <div class="appointment-choose-info">
-                        <span class="appointment-choose-header"
-                          >Выбор клиники</span
-                        >
-                        <p class="appointment-choose-text">
-                          Сначала выберите удобный адрес, затем врача в этой
-                          клинике
-                        </p>
-                      </div>
-                    </div>
-                    <div class="button-choose path doc">
-                      <img
-                        class="choose-icon"
-                        src="../styles/assets/svg/appointment/doc_pale.svg"
-                      />
-                      <img
-                        class="choose-icon hide"
-                        src="../styles/assets/svg/appointment/doc_active.svg"
-                      />
-                      <div class="appointment-choose-info">
-                        <span class="appointment-choose-header"
-                          >Выбор врача</span
-                        >
-                        <p class="appointment-choose-text">
-                          Сначала выберите нужного врача, затем клинику, где он
-                          принимает
-                        </p>
-                      </div>
-                      <img
-                        class="check-icon hide"
+                  <div class="buttons-choose clinics">
+                    <div class="button-choose clinic any">
+                      Любая клиника<img
+                        class="check-icon any hide"
                         src="../styles/assets/svg/appointment/appointment_check_icon.svg"
                         alt=""
                       />
+                    </div>
+                    <div class="button-choose-list">
+                      <div class="button-choose clinic-container">
+                        <p class="clinic-header">Эксимер на Апраксина</p>
+                        <div class="clinic-info">
+                          <div class="clinic-info-item">
+                            <img
+                              class="clinic-info-icon"
+                              src="../styles/assets/svg/appointment/clinic_adress.svg"
+                            />
+                            <span class="clinic-info-item-text address"
+                              >Апраксин переулок, дом 6</span
+                            >
+                          </div>
+                          <div class="clinic-info-item">
+                            <img
+                              class="clinic-info-icon"
+                              src="../styles/assets/svg/appointment/clinic_metro.svg"
+                            />
+                            <span class="clinic-info-item-text metro"
+                              >м. Спасская, м. Садовая, м. Сенная площадь</span
+                            >
+                          </div>
+                        </div>
+                        <img
+                          class="check-icon hide"
+                          src="../styles/assets/svg/appointment/appointment_check_icon.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="button-choose clinic-container">
+                        <p class="clinic-header">Эксимер на Коломяжском</p>
+                        <div class="clinic-info">
+                          <div class="clinic-info-item">
+                            <img
+                              class="clinic-info-icon"
+                              src="../styles/assets/svg/appointment/clinic_adress.svg"
+                            />
+                            <span class="clinic-info-item-text address"
+                              >Коломяжский проспект, дом 15, к.2</span
+                            >
+                          </div>
+                          <div class="clinic-info-item">
+                            <img
+                              class="clinic-info-icon"
+                              src="../styles/assets/svg/appointment/clinic_metro.svg"
+                            />
+                            <span class="clinic-info-item-text metro"
+                              >м. Пионерская</span
+                            >
+                          </div>
+                        </div>
+                        <img
+                          class="check-icon hide"
+                          src="../styles/assets/svg/appointment/appointment_check_icon.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="button-choose clinic-container">
+                        <p class="clinic-header">Эксимер на Типанова</p>
+                        <div class="clinic-info">
+                          <div class="clinic-info-item">
+                            <img
+                              class="clinic-info-icon"
+                              src="../styles/assets/svg/appointment/clinic_adress.svg"
+                            />
+                            <span class="clinic-info-item-text address"
+                              >улица Типанова, дом 4</span
+                            >
+                          </div>
+                          <div class="clinic-info-item">
+                            <img
+                              class="clinic-info-icon"
+                              src="../styles/assets/svg/appointment/clinic_metro.svg"
+                            />
+                            <span class="clinic-info-item-text metro"
+                              >м. Московский проспект</span
+                            >
+                          </div>
+                        </div>
+                        <img
+                          class="check-icon hide"
+                          src="../styles/assets/svg/appointment/appointment_check_icon.svg"
+                          alt=""
+                        />
+                      </div>
                     </div>
                   </div>
                   <div class="appointment-button-container">
