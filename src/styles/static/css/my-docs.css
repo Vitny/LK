@@ -59,20 +59,3 @@
   font-size: 16px;
   font-weight: 600;
 }
-
-.button-dwnld {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  padding: 6px 12px;
-  border-radius: 10px;
-  border: 1px solid;
-  border-color: var(--Gradient-blue);
-  color: var(--accent-blue);
-
-  font-size: 14px;
-}
-
-.button-dwnld:hover {
-  background: var(--Gradient-blue-10);
-}
