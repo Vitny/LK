@@ -18,3 +18,4 @@
 - [Запись — Путь записи](https://vitny.github.io/LK/src/pages/appointment-path.html)
 - [Запись — Клиника](https://vitny.github.io/LK/src/pages/appointment-clinic.html)
 - [Запись — Врач](https://vitny.github.io/LK/src/pages/appointment-doctor.html)
+- [Запись — Дата и время](https://vitny.github.io/LK/src/pages/appointment-date.html)
