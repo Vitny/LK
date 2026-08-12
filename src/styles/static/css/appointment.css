@@ -414,7 +414,7 @@
 
 .doctor-time-list {
   display: flex;
-  gap: 8px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
@@ -441,6 +441,52 @@
   pointer-events: none;
   font-weight: 600;
   border: none;
+}
+
+/* Подтверждение */
+
+.confirm-container {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding: 22px 28px;
+  border-radius: 14px;
+  border: 1px solid var(--light-grey);
+  background-color: var(--white);
+  width: 100%;
+}
+
+.confirm-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.confirm-item-header {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-pale-grey);
+  letter-spacing: -5%;
+}
+
+.confirm-item-content {
+  display: flex;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.confirm-item-content.type {
+  gap: 6px;
+}
+
+.confirm-item-content.clinic {
+  flex-direction: column;
+  gap: 4px;
+}
+
+.confirm-item.clinic-info {
+  padding-left: 3px;
+  gap: 3px;
 }
 
 @media (max-width: 650px) {
@@ -489,5 +535,25 @@
 
   .calendar-buttons {
     gap: 0;
+  }
+
+  .confirm-container {
+    padding: 20px 18px;
+  }
+
+  .confirm-item {
+    gap: 4px;
+  }
+
+  .confirm-item-header {
+    font-size: 14px;
+  }
+
+  .confirm-item-content {
+    font-size: 16px;
+  }
+
+  .confirm-container {
+    gap: 26px;
   }
 }
