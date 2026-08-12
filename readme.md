@@ -19,3 +19,4 @@
 - [Запись — Клиника](https://vitny.github.io/LK/src/pages/appointment-clinic.html)
 - [Запись — Врач](https://vitny.github.io/LK/src/pages/appointment-doctor.html)
 - [Запись — Дата и время](https://vitny.github.io/LK/src/pages/appointment-date.html)
+- [Запись — Подтверждение](https://vitny.github.io/LK/src/pages/appointment-confirm.html)
