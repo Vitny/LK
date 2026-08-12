@@ -489,6 +489,75 @@
   gap: 3px;
 }
 
+/* экран успешной записи */
+.success-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 32px 18px;
+  border-radius: 14px;
+  border: 1px solid var(--light-grey);
+  background-color: var(--white);
+}
+
+.success-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.success-icon {
+  background-color: #eaf7e8;
+  padding: 14px;
+  border-radius: 20px;
+  width: 60px;
+  height: 60px;
+}
+
+.success-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.succes-header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.success-warning {
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  border-radius: 14px;
+  border: 1px solid var(--state-wait-confirm-brdr);
+  background-color: var(--state-wait-confirm-bg);
+  padding: 14px 18px 14px 10px;
+}
+
+.success-warning-text {
+  color: var(--state-wait-confirm-txt);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.success-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.success-buttons > button {
+  width: 100%;
+}
+
 @media (max-width: 650px) {
   .appointment-header-step {
     font-size: 14px;
@@ -555,5 +624,14 @@
 
   .confirm-container {
     gap: 26px;
+  }
+  .success-buttons {
+    width: 100%;
+  }
+
+  .succes-header {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
   }
 }
