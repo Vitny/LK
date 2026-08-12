@@ -144,6 +144,10 @@
   border: 2px solid var(--accent-blue);
 }
 
+.button-choose.active {
+  padding: 20px 60px 20px 24px;
+}
+
 .check-icon {
   width: 32px;
   position: absolute;
@@ -152,6 +156,10 @@
 }
 
 .check-icon.any {
+  top: 15px;
+}
+
+.choose-container.doctor > .check-icon {
   top: 15px;
 }
 
@@ -198,7 +206,8 @@
   align-items: center;
 }
 
-.buttons-choose.clinics {
+.buttons-choose.clinics,
+.buttons-choose.doctors {
   flex-direction: column;
 }
 
@@ -209,11 +218,9 @@
   gap: 12px;
 }
 
-.clinic-container {
+.choose-container {
   flex: 0 0 calc(50% - 8px);
   min-width: 300px;
-  display: flex;
-  flex-direction: column;
   gap: 8px;
 }
 
@@ -280,7 +287,7 @@
     flex-direction: column;
   }
 
-  .clinic-container {
+  .choose-container {
     flex: 1 1 0;
   }
 }
