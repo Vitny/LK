@@ -58,3 +58,35 @@ window.addEventListener("resize", () => {
     closeMenu();
   }
 });
+
+// Переключение вкладок "Предстоящие" / "Прошедшие"
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleUpcoming = document.querySelector(".toggle.upcoming");
+  const togglePast = document.querySelector(".toggle.past");
+  const appointmentItems = document.querySelectorAll(".appointment-item");
+
+  if (!toggleUpcoming || !togglePast) return;
+
+  function showUpcoming() {
+    toggleUpcoming.classList.add("active");
+    togglePast.classList.remove("active");
+
+    appointmentItems.forEach((item) => {
+      const isDone = item.querySelector(".appointment-state.done");
+      item.classList.toggle("hide", Boolean(isDone));
+    });
+  }
+
+  function showPast() {
+    togglePast.classList.add("active");
+    toggleUpcoming.classList.remove("active");
+
+    appointmentItems.forEach((item) => {
+      const isDone = item.querySelector(".appointment-state.done");
+      item.classList.toggle("hide", !isDone);
+    });
+  }
+
+  toggleUpcoming.addEventListener("click", showUpcoming);
+  togglePast.addEventListener("click", showPast);
+});
