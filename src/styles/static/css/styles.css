@@ -216,15 +216,17 @@ label {
 
 .menu-button.active {
   background: var(--Gradient-blue);
-}
-
-.menu-button.active {
   color: var(--white);
   font-weight: 600;
+  pointer-events: none;
 }
 
 .menu-button.active svg {
   fill: var(--white);
+}
+
+.menu-button:hover {
+  background: var(--Gradient-blue-10);
 }
 
 .logo-header {
