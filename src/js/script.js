@@ -113,23 +113,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const buttons = group.querySelectorAll(".button-choose");
     if (!buttons.length) return;
 
-    // ищем ближайший общий блок и в нём кнопку "Продолжить"
+    // ищем ближайший общий блок и в нём кнопку "Продолжить" именно с классом choose
     const appointmentContainer = group.closest(".appointment-container");
     const continueButton = appointmentContainer
-      ? appointmentContainer.querySelector(".main-button")
+      ? appointmentContainer.querySelector(".main-button.choose")
       : null;
 
     function setButtonState(button, isActive) {
       button.classList.toggle("active", isActive);
 
-      // если внутри кнопки есть пара картинок .choose-icon (обычная/активная) — переключаем их
       const chooseIcons = button.querySelectorAll(".choose-icon");
       if (chooseIcons.length === 2) {
         chooseIcons[0].classList.toggle("hide", isActive);
         chooseIcons[1].classList.toggle("hide", !isActive);
       }
 
-      // если внутри кнопки есть галочка .check-icon — показываем/скрываем её
       const checkIcon = button.querySelector(".check-icon");
       if (checkIcon) {
         checkIcon.classList.toggle("hide", !isActive);
@@ -149,7 +147,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 
-    // изначальное состояние: ничего не выбрано — кнопка "Продолжить" неактивна
     updateContinueButton();
   });
 });
@@ -167,7 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Выбор времени приёма (у любого врача)
   const timeButtons = document.querySelectorAll(".doctor-time");
-  const continueButton = document.querySelector(".main-button");
+  const continueButton = document.querySelector(".main-button.choose");
 
   function updateContinueButton() {
     if (!continueButton) return;
