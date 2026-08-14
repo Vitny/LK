@@ -565,12 +565,18 @@ label {
 }
 
 /* tooltip */
+
+.info-icon {
+  position: relative;
+}
+
 .info-tooltip {
   position: absolute;
   bottom: calc(100% + 10px);
   left: calc(-250%);
 
   width: 340px;
+  height: fit-content;
   padding: 14px 18px;
   background: linear-gradient(180deg, #eaf5ff 0%, #f7fbff 100%);
   border: 1px solid var(--lightblue);

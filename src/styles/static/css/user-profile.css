@@ -121,13 +121,9 @@
     visibility 0.2s ease;
 }
 
-.tooltip.active {
-  opacity: 1;
-  visibility: visible;
-}
-.tooltip-container:hover .tooltip {
-  opacity: 1;
-  visibility: visible;
+.info-tooltip.user-profile {
+  bottom: calc(-50%);
+  left: calc(180%);
 }
 
 @media (max-width: 650px) {
