@@ -340,12 +340,15 @@ label {
 
 .patient-button.dropdown {
   display: none;
+  padding: 6px 18px 6px 24px;
+  gap: 20px;
 }
 
 .patient-button.active {
   background: var(--Gradient-blue-10);
   color: var(--accent-blue);
   border-color: var(--Gradient-blue);
+  pointer-events: none;
 }
 
 .patient-name {
@@ -460,8 +463,7 @@ label {
 
   .patient-button.dropdown {
     display: flex;
-    padding: 6px 18px 6px 24px;
-    gap: 20px;
+    pointer-events: none;
   }
 
   .patient-dropdown {

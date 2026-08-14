@@ -90,3 +90,16 @@ document.addEventListener("DOMContentLoaded", () => {
   toggleUpcoming.addEventListener("click", showUpcoming);
   togglePast.addEventListener("click", showPast);
 });
+
+// переключение активного пациента в верхней панели
+
+document.addEventListener("DOMContentLoaded", () => {
+  const patientButtons = document.querySelectorAll(".patient-button");
+
+  patientButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      patientButtons.forEach((btn) => btn.classList.remove("active"));
+      button.classList.add("active");
+    });
+  });
+});
