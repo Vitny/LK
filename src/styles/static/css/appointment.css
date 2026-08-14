@@ -118,10 +118,17 @@
   gap: 18px;
   width: 100%;
   cursor: pointer;
+
+  transition-property: color, border-color, opacity, transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
 }
 
 .button-choose:hover {
-  border-color: var(--accent-blue);
+  border: 1px solid transparent;
+  background:
+    linear-gradient(var(--white), var(--white)) padding-box,
+    var(--Gradient-blue) border-box;
 }
 
 .choose-icon {
@@ -140,7 +147,10 @@
 }
 
 .button-choose.active {
-  border: 2px solid var(--accent-blue);
+  border: 2px solid transparent;
+  background:
+    linear-gradient(var(--white), var(--white)) padding-box,
+    var(--Gradient-blue) border-box;
 }
 
 .buttons-choose.doctors .button-choose.active,

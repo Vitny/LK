@@ -85,7 +85,7 @@
 /* общие стили */
 
 * {
-  transition: all 0.2s ease;
+  transition: all 0.2s ease-in;
 }
 
 main {
