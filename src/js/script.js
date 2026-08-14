@@ -103,3 +103,53 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// СТРАНИЦЫ ЗАПИСИ
+// переключение кнопок .button-choose + активация кнопки "Продолжить"
+document.addEventListener("DOMContentLoaded", () => {
+  const groups = document.querySelectorAll(".buttons-choose");
+
+  groups.forEach((group) => {
+    const buttons = group.querySelectorAll(".button-choose");
+    if (!buttons.length) return;
+
+    // ищем ближайший общий блок и в нём кнопку "Продолжить"
+    const appointmentContainer = group.closest(".appointment-container");
+    const continueButton = appointmentContainer
+      ? appointmentContainer.querySelector(".main-button")
+      : null;
+
+    function setButtonState(button, isActive) {
+      button.classList.toggle("active", isActive);
+
+      // если внутри кнопки есть пара картинок .choose-icon (обычная/активная) — переключаем их
+      const chooseIcons = button.querySelectorAll(".choose-icon");
+      if (chooseIcons.length === 2) {
+        chooseIcons[0].classList.toggle("hide", isActive);
+        chooseIcons[1].classList.toggle("hide", !isActive);
+      }
+
+      // если внутри кнопки есть галочка .check-icon — показываем/скрываем её
+      const checkIcon = button.querySelector(".check-icon");
+      if (checkIcon) {
+        checkIcon.classList.toggle("hide", !isActive);
+      }
+    }
+
+    function updateContinueButton() {
+      if (!continueButton) return;
+      const hasActive = group.querySelector(".button-choose.active");
+      continueButton.classList.toggle("disabled", !hasActive);
+    }
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        buttons.forEach((btn) => setButtonState(btn, btn === button));
+        updateContinueButton();
+      });
+    });
+
+    // изначальное состояние: ничего не выбрано — кнопка "Продолжить" неактивна
+    updateContinueButton();
+  });
+});

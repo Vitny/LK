@@ -143,7 +143,8 @@
   border: 2px solid var(--accent-blue);
 }
 
-.button-choose.active {
+.buttons-choose.doctors .button-choose.active,
+.buttons-choose.clinics .button-choose.active {
   padding: 20px 60px 20px 24px;
 }
 
@@ -155,7 +156,7 @@
 }
 
 .check-icon.any {
-  top: 15px;
+  top: 13px;
 }
 
 .choose-container.doctor > .check-icon {

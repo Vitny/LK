@@ -135,6 +135,11 @@ input::placeholder {
   transition: opacity 0.3s ease;
 }
 
+.main-button.disabled {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
 .sub-button {
   background: var(--white);
   border: 1px solid var(--light-grey);
