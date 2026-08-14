@@ -577,8 +577,6 @@ label {
 
 .info-tooltip {
   position: absolute;
-  bottom: calc(100% + 10px);
-  left: calc(-250%);
 
   width: 340px;
   height: fit-content;

@@ -555,6 +555,12 @@
   width: 100%;
 }
 
+.info-tooltip.confirm {
+  width: 500px;
+  bottom: calc(100% + 10px);
+  left: calc(50%);
+}
+
 @media (max-width: 650px) {
   .appointment-header-step {
     font-size: 14px;

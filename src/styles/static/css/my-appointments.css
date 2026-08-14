@@ -166,6 +166,11 @@
   align-items: center;
 }
 
+.info-tooltip.my-appointments {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: calc(-250%);
+}
 @media (max-width: 650px) {
   .toggle-buttons {
     width: 100%;
