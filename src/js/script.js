@@ -153,3 +153,73 @@ document.addEventListener("DOMContentLoaded", () => {
     updateContinueButton();
   });
 });
+
+// Выбор даты в календаре
+document.addEventListener("DOMContentLoaded", () => {
+  const dateButtons = document.querySelectorAll(".button-date");
+
+  dateButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      dateButtons.forEach((btn) => btn.classList.remove("active"));
+      button.classList.add("active");
+    });
+  });
+
+  // Выбор времени приёма (у любого врача)
+  const timeButtons = document.querySelectorAll(".doctor-time");
+  const continueButton = document.querySelector(".main-button");
+
+  function updateContinueButton() {
+    if (!continueButton) return;
+    const hasActive = document.querySelector(".doctor-time.active");
+    continueButton.classList.toggle("disabled", !hasActive);
+  }
+
+  timeButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      timeButtons.forEach((btn) => btn.classList.remove("active"));
+      button.classList.add("active");
+      updateContinueButton();
+    });
+  });
+
+  // на старте ни одно время не выбрано — сбрасываем и блокируем "Продолжить"
+  timeButtons.forEach((btn) => btn.classList.remove("active"));
+  updateContinueButton();
+});
+
+// Переключение недели в календаре (следующая/предыдущая)
+document.addEventListener("DOMContentLoaded", () => {
+  const rightButton = document.querySelector(".week-swipe-button.right");
+  const leftButton = document.querySelector(".week-swipe-button.left");
+  const dateElements = document.querySelectorAll(".button-date .calendar-date");
+  const monthElement = document.querySelector(".calendar-month");
+
+  if (!rightButton || !leftButton || !dateElements.length || !monthElement)
+    return;
+
+  const currentWeekDates = ["22", "23", "24", "25", "26", "27", "28"];
+  const nextWeekDates = ["29", "30", "31", "01", "02", "03", "04"];
+
+  const currentMonthText = "Июль ";
+  const nextMonthText = "Июль — Август ";
+
+  let isNextWeek = false;
+
+  function renderWeek(isNext) {
+    const dates = isNext ? nextWeekDates : currentWeekDates;
+    dateElements.forEach((el, index) => {
+      el.textContent = dates[index] ?? el.textContent;
+    });
+    monthElement.textContent = isNext ? nextMonthText : currentMonthText;
+    isNextWeek = isNext;
+  }
+
+  rightButton.addEventListener("click", () => {
+    if (!isNextWeek) renderWeek(true);
+  });
+
+  leftButton.addEventListener("click", () => {
+    if (isNextWeek) renderWeek(false);
+  });
+});
