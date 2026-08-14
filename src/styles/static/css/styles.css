@@ -359,6 +359,8 @@ label {
 
 /* контент выбранного режима навигации */
 .main-content-container {
+  overflow-x: visible;
+
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -558,4 +560,41 @@ label {
 
 .hide {
   display: none;
+}
+
+/* tooltip */
+.info-tooltip {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: calc(-250%);
+
+  width: 340px;
+  padding: 14px 18px;
+  background: linear-gradient(180deg, #eaf5ff 0%, #f7fbff 100%);
+  border: 1px solid var(--lightblue);
+  border-radius: 16px;
+
+  color: var(--accent-blue);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: left;
+  white-space: normal;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-6px, 6px);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    visibility 0.25s ease;
+
+  pointer-events: none;
+  z-index: 2147483647;
+}
+
+.info-icon:hover .info-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, 0);
 }

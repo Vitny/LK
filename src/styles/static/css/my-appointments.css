@@ -136,6 +136,8 @@
   border: 1px solid;
   border-color: var(--Gradient-blue);
   color: var(--accent-blue);
+  white-space: nowrap;
+  min-width: max-content;
 
   font-size: 14px;
 }
@@ -149,6 +151,7 @@
 }
 
 .info-icon {
+  position: relative;
   width: 102px;
   display: flex;
   align-items: center;
